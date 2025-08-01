@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lathesh Neikar - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2em;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+        .section {
+            background: white;
+            padding: 1.5em;
+            margin-bottom: 1em;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #2c3e50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lathesh Neikar</h1>
+        <p>Master's in Computer Science |Software Engineer | DevOps & Cloud Engineer | AWS, Azure, Python, Kubernetes | Scalable Systems | Skilled in Cloud Infrastructure, Python, and Networking | Cyber Security | Mason, OH</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div id="home" class="section">
+            <h2>Welcome</h2>
+            <p>Hello! I'm a Computer Science graduate student at Cleveland State University, passionate about cybersecurity and IT infrastructure. Explore my work and get in touch!</p>
+        </div>
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>I'm Lathesh, an international student from India with experience in cloud systems, scripting, and IT support. My goal is to secure digital infrastructures and contribute to innovative tech solutions.</p>
+        </div>
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Cybersecurity Dashboard</strong>: Built a threat monitoring tool using Python and Splunk.</li>
+                <li><strong>Cloud Automation Script</strong>: Developed AWS automation scripts for resource management.</li>
+                <li><strong>IT Support Portal</strong>: Created a helpdesk ticketing system with JavaScript and Jira API.</li>
+            </ul>
+        </div>
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:lathesh.neikar@example.com">lathesh.neikar@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/lathesh-neikar" target="_blank">linkedin.com/in/lathesh-neikar</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Lathesh Neikar. All rights reserved.</p>
+    </footer>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
